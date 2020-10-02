@@ -23,16 +23,16 @@ int main()
 				int nuovo = rand()%100 + 1;
 				int ris = inserisci(miaCoda,nuovo);
 				if (ris==0)
-					cout<<"Inserito in coda: "<<nuovo<<endl;
+					cout<<"Inserito in coda: "<<nuovo<<endl<<endl;
 				else
-					cout<<"Coda piena!"<<endl;
+					cout<<"Coda piena!"<<endl<<endl;
 				break;
 			}
 			case 2:
 			{
 				int primo = estrai(miaCoda);
 				if (primo!=0)
-					cout<<"Elemento estratto : "<<primo<<endl;
+					cout<<"Elemento estratto : "<<primo<<endl<<endl;
 				break;
 			}
 			case 3:
@@ -41,7 +41,7 @@ int main()
 			case 0:
 				break;
 			default:
-				cout<<"Scelta errata!"<<endl;
+				cout<<"Scelta errata!"<<endl<<endl;
 				break;
 		}
 	}while (scelta!=0);
@@ -54,7 +54,8 @@ int menu()
 	cout<<"2. Estrai primo elemento"<<endl;
 	cout<<"3. Stampa coda"<<endl;
 	cout<<"0. Uscita"<<endl;
-	cout<<"Scelta: ";
+	cout<<endl<<"Scelta: ";
 	cin>>s;
+  	cout<<endl;
 	return s;
 }
